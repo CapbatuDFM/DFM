@@ -1,9 +1,14 @@
-@import 'tailwindcss';
+﻿/* Hallmark · shape: app screen · genre: modern-minimal (inferred) · theme: brand · redesign: full
+ * paper: oklch(98.5% 0.004 190) · accent: oklch(46% 0.09 190) · display: Plus Jakarta Sans · body: Plus Jakarta Sans
+ * nav: sidebar, kept (8 destinations) · signature: the house, rooms laid out by floor · states: full, empty
+ * axes: light/geometric-sans/chromatic-teal · posture: restrained · contrast: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V3 · weakest: V, the old page was a card grid; the floors, a ruled figure row and open tables replace it */
+@import url("./tokens.css");
+@import url("./base.css");
+@import url("./shell.css");
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
-}
+[x-cloak] { display: none !important; }
